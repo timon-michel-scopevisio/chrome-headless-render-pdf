@@ -388,6 +388,7 @@ class RenderPDF {
                 await this.checkChromeVersion();
                 return;
             } catch (e) {
+                this.log(e);
                 await this.wait(10);
             }
         }
